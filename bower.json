@@ -1,0 +1,26 @@
+{
+  "name": "screenpresence",
+  "description": "Screen Presence web app front end components",
+  "main": ".bowerrc",
+  "authors": [
+    "Donna Robinson <donna@moviemeetinghouse.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "font-awesome",
+    "sweet-alert"
+  ],
+  "homepage": "https://github.com/dojorob76/screenpresence",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "sweetalert2": "^6.0.1"
+  }
+}
