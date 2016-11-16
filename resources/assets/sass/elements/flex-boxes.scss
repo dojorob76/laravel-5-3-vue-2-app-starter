@@ -1,0 +1,83 @@
+//-------------------------------------------------------------------------------------------------------------------
+// This file contains the styles that incorporate Flexbox containers into the app
+// See: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+//-------------------------------------------------------------------------------------------------------------------
+
+.flex-container {
+    display: flex;
+
+    &.vertical {
+        flex-direction: column;
+    }
+    &.horizontal {
+        flex-direction: row;
+    }
+    &.wrapped {
+        flex-wrap: wrap;
+    }
+    &.unwrapped {
+        flex-wrap: nowrap;
+    }
+    &.left-justify {
+        justify-content: flex-start;
+    }
+    &.right-justify {
+        justify-content: flex-end;
+    }
+    &.center-justify {
+        justify-content: center;
+    }
+    &.between {
+        justify-content: space-between;
+    }
+    &.around {
+        justify-content: space-around;
+    }
+    &.top-align-items {
+        align-items: flex-start;
+    }
+    &.bottom-align-items {
+        align-items: flex-end;
+    }
+    &.center-align-items {
+        align-items: center;
+    }
+    &.stretch-items {
+        align-items: stretch;
+    }
+    &.baseline-items {
+        align-items: baseline;
+    }
+    &.top-align-content {
+        align-content: flex-start;
+    }
+    &.bottom-align-content {
+        align-content: flex-end;
+    }
+    &.center-content {
+        align-content: center;
+    }
+    &.stretch-content {
+        align-content: stretch;
+    }
+    &.between-content {
+        align-content: space-between;
+    }
+    &.around-content {
+        align-content: space-around;
+    }
+    &.no-small {
+        @media (max-width: $screen-sm-max) {
+            display: block;
+        }
+    }
+    &.no-min {
+        @media (max-width: $screen-xs-max) {
+            display: block;
+        }
+    }
+}
+
+.flex-item {
+    margin: auto;
+}

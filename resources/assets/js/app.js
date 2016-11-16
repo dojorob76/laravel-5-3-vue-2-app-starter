@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * include Vue and Vue Resource. This gives a great starting point for
@@ -13,6 +12,9 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
+Vue.component('delete-button', require('./components/buttons/DeleteButton.vue'));
+Vue.component('feedback-button', require('./components/buttons/FeedbackButton.vue'));
+Vue.component('ajax-errors', require('./components/forms/AjaxErrors.vue'));
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({

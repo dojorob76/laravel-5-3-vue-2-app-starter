@@ -1,0 +1,29 @@
+//-------------------------------------------------------------------------------------------------------------------
+// This file contains the custom styles for the custom app Buttons
+//-------------------------------------------------------------------------------------------------------------------
+
+// ---------- FEEDBACK BUTTONS ----------
+// The container for the feedback text that displays when a feedback button is clicked
+.wait-content {
+    @extend .hide-it;
+    &.show-me {
+        @extend .show-it;
+    }
+}
+
+// The containers for the feedback icon and feedback text
+.wait-icon, .wait-text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+// The feedback icon
+.wait-icon {
+    @include animation-settings(2s, 0s, infinite);
+}
+
+// The feedback text
+.wait-text {
+    @include animation-settings(2.5s, 0.5s, infinite);
+}
