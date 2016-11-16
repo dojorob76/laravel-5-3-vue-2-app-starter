@@ -22,11 +22,11 @@ If this configuration works for your purposes, feel free to use/fork it in any w
 ## Installation:
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this [repo](https://github.com/dojorob76/laravel-5-3-vue-2-app-starter) and clone it into your project directory, then run `composer install`, `npm install`, `bower install`, and `gulp`. 
-2. Copy .env.example to a new file called .env in the same directory and install the *Laravel Key* with the following command:
-```` $ php artisan key:generate ````
+2. Copy .env.example to a new file called .env in the same directory 
+3. Install the *Laravel Key* with the following command:
+    ```` $ php artisan key:generate ````
 3. Open app/Providers/AppServiceProvider.php and uncomment the code within the 'register' function
-4. To use [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper), run the following command:
-```` $ php artisan ide-helper:generate ````
+4. `composer update` to generate the IDE Helper files for [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
 
 ## Custom Elements:
 #### <a name="flash-messages"></a>Flash Messages
