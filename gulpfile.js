@@ -5,7 +5,7 @@ require('laravel-elixir-vue-2');
 var paths = {
     'bower': './vendor/bower_components/',
     'vendor': './resources/assets/vendor/',
-    'assets': '.resources/assets/',
+    'assets': './resources/assets/',
     'bootstrap': 'node_modules/bootstrap-sass/assets/'
 };
 
@@ -23,8 +23,8 @@ var paths = {
 elixir(mix => {
     mix.sass('app.scss')
 
-        // Uncomment when images are added//.copy(paths.assets + 'images/**', 'public/images')
-        // Uncomment if fonts are added//.copy(paths.assets + 'fonts/**', 'public/fonts')
+        //.copy(paths.assets + 'images/**', 'public/images')
+        //.copy(paths.assets + 'fonts/**', 'public/fonts')
         .copy(paths.bower + 'font-awesome/fonts/**', 'public/fonts')
         .copy(paths.bootstrap + 'fonts/bootstrap/**', 'public/fonts')
         .copy(paths.bower + 'es6-promise/es6-promise.auto.min.js', paths.vendor + 'js/es6-promise.auto.min.js')

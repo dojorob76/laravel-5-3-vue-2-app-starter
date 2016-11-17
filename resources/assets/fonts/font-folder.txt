@@ -1,0 +1,4 @@
+Place any vendor fonts that should be available in your 'public/fonts' directory in this folder.
+
+Once fonts have been added here, uncomment the following line in the gulpfile:
+.copy(paths.assets + 'fonts/**', 'public/fonts')

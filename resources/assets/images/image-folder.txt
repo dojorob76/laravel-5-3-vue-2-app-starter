@@ -1,0 +1,4 @@
+Place any images that should be available in your 'public/images' directory in this folder.
+
+Once images have been added here, uncomment the following line in the gulpfile:
+.copy(paths.assets + 'images/**', 'public/images')
