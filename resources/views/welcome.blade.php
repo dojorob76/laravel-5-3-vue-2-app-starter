@@ -60,35 +60,6 @@
 @endsection
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            @include('global.partials._boot-flash-messages')
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <form method="POST" action="{{url('/test')}}" id="test-form">
-                    <div class="form-group" id="test-title">
-                        <label for="title" class="control-label">Title:</label> <input type="text" name="title"
-                                                                                       value="{{old('title')}}"
-                                                                                       class="form-control">
-                        <ajax-errors prefix="test-title"></ajax-errors>
-                    </div>
-                    <div class="form-group" id="test-body">
-                        <label for="body" class="control-label">Body:</label> <input type="text" name="body"
-                                                                                     value="{{old('title')}}"
-                                                                                     class="form-control">
-                        @include('global.partials.forms._ajax-errors', ['e_pre' => 'test-body'])
-                    </div>
-                    <div class="form-group">
-                        @include('global.partials.buttons._ajax-form-feedback-button', [
-                        'field_prefix' => 'test-',
-                        'form_id' => 'test-form'
-                        ])
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
             <div class="top-right links">
